@@ -3,7 +3,7 @@
 let amigo = [];
 
 // Implementa una función para agregar amigos
-function addFriends(){
+function agregarAmigo(){
     let listaAmigos = document.getElementById("amigo").value; //Capturar el valor del campo de entrada
 
         if (amigo === ""){ //Validar la entrada
