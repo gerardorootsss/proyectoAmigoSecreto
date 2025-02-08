@@ -37,8 +37,32 @@ function actualizarLista(){
     listaAmigos.innerHTML = "";
 
 // Iterar sobre el arreglo
-    for (let i = 0; i<listaAmigos.lengt);
+    for (let i = 0; i<listaAmigos.lengt; i++){
         let li = docoument.createElement("li");
         li.textContent = amigo[i];
         listaAmigos.appendChild(li); 
+    }
+}
+
+//Implementa una función para sortear los amigos
+
+function sortearAmigo(){
+    //validar que haya amigos disponibles
+    if (amigo.length === 0){ // comprueba si array "amigos" esta vcacio
+        alert ("No hay amigos disponibles para sortear. Agrega al menos 2.");
+        return;
+    }
+
+    // genera un indice aleatorio
+    let indiceAleatorio = Math.floor(Math.random() * amigo.length); 
+
+    // genera un numero aleatorio entre 0 y la longitud de la lista
+
+    let amigoSorteado = amigo(indiceAleatorio); // usa el indice aleatorio para obtener un nombre del array 
+
+    // mostrar el resultado en el HTML 
+    
+    let resultado = document.getElementById("resultado")
+    resultado.innerHTML = `Amigo sorteado: <strong>${amigoSorteado}</strong>`;
+
 }
