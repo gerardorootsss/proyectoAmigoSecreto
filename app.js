@@ -11,7 +11,7 @@ function agregarAmigo(){
             return;
         }
         // valida si el nombre ingresado ya fuera en el array 
-        if (amigo.incluides(nameAmigo)){
+        if (amigo.incluides(listaAmigos)){
             alert(`El nombre ${listaAmigos} ya fue ingresado.`)
         }
 
