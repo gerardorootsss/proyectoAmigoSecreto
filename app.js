@@ -15,7 +15,7 @@ function agregarAmigo(){
             return; //detiene la ejecucion
         }
         // agrega el nombre ingreso a la lista 
-        amigo.push(inputAmigo); //agrega en nombre ingresado al final del arreglo amigo 
+        amigo.push(nombreAmigo); //agrega en nombre ingresado al final del arreglo amigo 
         // limpiar campo de entrada
         inputAmigo.value = ""; // limpia el campo de ingreso de nombre
         // actualizar lista en HTML 
