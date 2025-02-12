@@ -3,14 +3,15 @@
 let amigo = []; 
 // Implementa una función para agregar amigos
 function agregarAmigo(){
-    let inputAmigo = document.getElementById("amigo").value; //Capturar el valor del campo de entrada
+    let inputAmigo = document.getElementById("amigo"); //Capturar el valor del campo de entrada
+    let nombreAmigo = inputAmigo.value.trim();
         if (inputAmigo == ""){ //Valida si el campo input esta vacio
             alert("Por favor, inserte un nombre."); //muestra mensaje de alerta
             return; // detiene la ejecucion
         }
         // valida si el nombre ingresado ya fuera en el array 
-        if (amigo.includes(inputAmigo)){ // valida si el nombre ingresado figura en array amigo
-            alert(`El nombre ${inputAmigo} ya fue ingresado.`); // muestra mensaje de alerta 
+        if (amigo.includes(nombreAmigo)){ // valida si el nombre ingresado figura en array amigo
+            alert(`El nombre ${nombreAmigo} ya fue ingresado.`); // muestra mensaje de alerta 
             return; //detiene la ejecucion
         }
         // agrega el nombre ingreso a la lista 
